@@ -98,14 +98,29 @@
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero"
-      class="d-flex flex-column justify-content-center align-items-center">
-      <div class="hero-container" data-aos="fade-in">
-        <h1>Venkat Masetty</h1>
-        <p>I'm <span class="typed"
-            data-typed-items="Full Stack Developer, Web Developer, Front-end Developer"></span></p>
-      </div>
-    </section><!-- End Hero -->
+ 
+
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  <div class="hero-container" data-aos="fade-in">
+    <h1>Venkat Masetty</h1>
+    <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Web Developer, Front-end Developer"></span></p>
+  </div>
+</section>
+
+<!-- Initialize Typed.js -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var typed = new Typed('.typed', {
+      strings: ["Full Stack Developer", "Web Developer", "Front-end Developer"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+  });
+</script>
+
+</body>
+</html>
 
     <main id="main">
 
